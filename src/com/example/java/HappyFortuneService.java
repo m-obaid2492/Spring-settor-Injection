@@ -5,7 +5,10 @@ public class HappyFortuneService implements FortuneService {
 	@Override
 	public String getFortune() {
 		// TODO Auto-generated method stub
-		return "today is your lucky day";
+		int rand=(int)(Math.random()*(4));
+		String[] arr= {"Good","Okay","BAD","Excelent"};
+		
+		return arr[rand]+Math.random()+" "+rand;
 	}
 
 }
