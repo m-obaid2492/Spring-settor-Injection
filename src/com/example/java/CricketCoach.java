@@ -3,6 +3,10 @@ package com.example.java;
 public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
+	private String emailAddress;
+	private String team;
+	
+	
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
@@ -28,6 +32,25 @@ public class CricketCoach implements Coach {
 		System.out.println("CricketCoach: in setter");
 		this.fortuneService = fortuneService;
 	}
+
+	public String getEmailAddress() {
+		System.out.println("CricketCoach: in email setter");
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("CricketCoach: in team setter");
+		this.team = team;
+	}
+	
 	
 	
 	
